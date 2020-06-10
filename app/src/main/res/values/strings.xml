@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">temperaturekotlin</string>
+    <string name="title_f">Fahrenheit</string>
+    <string name="title_k">Kelvin</string>
+    <string name="title_c">Celsius</string>
+    <string name="submit">Submit</string>
+    <string name="normal">Normal</string>
+    <string name="abnormal">Abnormal</string>
+    <string name="result">Result will appear here.</string>
+</resources>

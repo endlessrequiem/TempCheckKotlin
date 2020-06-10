@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_fah">
+
+    <fragment
+        android:id="@+id/navigation_fah"
+        android:name="austinwhite.tech.temperaturekotlin.ui.fahrenheit.FahrenheitFragment"
+        android:label="@string/title_f"
+        tools:layout="@layout/fragment_fah" />
+
+    <fragment
+        android:id="@+id/navigation_kel"
+        android:name="austinwhite.tech.temperaturekotlin.ui.kelvin.KelvinFragment"
+        android:label="@string/title_k"
+        tools:layout="@layout/fragment_kel" />
+
+    <fragment
+        android:id="@+id/navigation_cel"
+        android:name="austinwhite.tech.temperaturekotlin.ui.celsius.CelsiusFragment"
+        android:label="@string/title_c"
+        tools:layout="@layout/fragment_cel" />
+</navigation>
