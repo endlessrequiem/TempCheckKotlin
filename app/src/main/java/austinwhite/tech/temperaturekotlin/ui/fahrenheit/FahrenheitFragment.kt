@@ -28,7 +28,7 @@ class FahrenheitFragment : Fragment() {
         button.setOnClickListener {
             val temp = tempfah.text.toString().toDouble()
 
-            if (97 <= temp && temp <= 99) {
+            if (temp in 97.0..99.0) {
                 tempresultf.setText(R.string.normal)
             } else {
                 tempresultf.setText(R.string.abnormal)

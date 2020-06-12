@@ -28,7 +28,7 @@ class CelsiusFragment : Fragment() {
         button.setOnClickListener {
             val temp = tempcels.text.toString().toDouble()
 
-            if (36.1 <= temp && temp <= 37.2) {
+            if (temp in 36.1..37.2) {
                 tempresult.setText(R.string.normal)
             } else {
                 tempresult.setText(R.string.abnormal)

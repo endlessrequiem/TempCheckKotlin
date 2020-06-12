@@ -28,7 +28,7 @@ class KelvinFragment : Fragment() {
         button.setOnClickListener {
             val temp = tempkels.text.toString().toDouble()
 
-            if (309.25 <= temp && temp <= 310.35) {
+            if (temp in 309.25..310.35) {
                 tempresultk.setText(R.string.normal)
             } else {
                 tempresultk.setText(R.string.abnormal)
