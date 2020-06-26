@@ -26,15 +26,23 @@ class KelvinFragment : Fragment() {
         val button: Button = root.findViewById(R.id.submitkel) //submit button
 
         button.setOnClickListener {
-            val temp = tempkels.text.toString().toDouble()
+            val temp = tempkels.text.toString()
 
-            if (temp in 309.25..310.35) {
-                tempresultk.setText(R.string.normal)
+            if (temp.isEmpty()) {
+                tempresultk.text = (getString(R.string.error))
             } else {
-                tempresultk.setText(R.string.abnormal)
+                checker(temp, tempresultk)
             }
 
         }
         return root
+    }
+
+    private fun checker(temp: String, tempresultk: TextView) {
+        if (temp.toDouble() in 309.25..310.35) {
+            tempresultk.text = getString(R.string.normal)
+        } else {
+            tempresultk.text = getString(R.string.abnormal)
+        }
     }
 }
